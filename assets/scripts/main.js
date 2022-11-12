@@ -60,7 +60,7 @@ function initializeServiceWorker() {
     // STEPS B6 ONWARDS WILL BE IN /sw.js
     let registration;
     navigator.serviceWorker
-      .register('/sw.js', { scope: '/' })
+      .register('../sw.js', { scope: '../' })
       .then(serviceWorker => {
         registration = serviceWorker;
         console.log('Service Worker Registered', registration);
